@@ -40,9 +40,11 @@ LearnerRegrFNN = R6Class("LearnerRegrFNN",
   private = list(
     .train = function(task) {
       self$state$feature_names = task$feature_names
-      list(
+      pars = self$param_set$get_values(tags = "train")
+      invoke(list,
         train = task$data(cols = task$feature_names),
-        y = task$truth()
+        y = task$truth(),
+        .args = pars
       )
     },
 

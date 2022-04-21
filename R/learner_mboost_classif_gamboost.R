@@ -122,9 +122,7 @@ LearnerClassifGAMBoost = R6Class("LearnerClassifGAMBoost",
         p = invoke(predict, self$model, newdata = newdata, type = "class")
         list(response = p)
       } else {
-        p = mlr3misc::invoke(predict, self$model,
-          newdata = newdata,
-          type = "response")
+        p = mlr3misc::invoke(predict, self$model, newdata = newdata, type = "response", .args = pars)
         p = matrix(c(p, 1 - p), ncol = 2L, nrow = length(p))
         colnames(p) = task$class_names
         list(prob = p)
