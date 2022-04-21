@@ -45,7 +45,6 @@ lrn("surv.obliqueRSF")
    verbose \tab logical \tab TRUE \tab TRUE, FALSE \tab - \cr
    compute_oob_predictions \tab logical \tab FALSE \tab TRUE, FALSE \tab - \cr
    random_seed \tab integer \tab - \tab  \tab \eqn{(-\infty, \infty)}{(-Inf, Inf)} \cr
-   density \tab logical \tab FALSE \tab TRUE, FALSE \tab - \cr
 }
 }
 

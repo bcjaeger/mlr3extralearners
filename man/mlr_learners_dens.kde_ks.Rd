@@ -44,6 +44,7 @@ lrn("dens.kde_ks")
    approx.cont \tab logical \tab TRUE \tab TRUE, FALSE \tab - \cr
    unit.interval \tab logical \tab FALSE \tab TRUE, FALSE \tab - \cr
    verbose \tab logical \tab FALSE \tab TRUE, FALSE \tab - \cr
+   density \tab logical \tab FALSE \tab TRUE, FALSE \tab - \cr
 }
 }
 
