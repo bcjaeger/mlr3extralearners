@@ -22,7 +22,7 @@ test_that("create_learner works for tempdir", {
   )
 
   # just check whether the file was created
-  template_lrn = suppressWarnings(readLines(files[["learner"]]))
+  template_lrn = readLines(files[["learner"]])
   template_test = readLines(files[["test"]])
   template_ptest = readLines(files[["param_test"]])
 

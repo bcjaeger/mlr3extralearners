@@ -199,6 +199,8 @@ create_learner = function(path = ".", classname, type, key = tolower(classname),
       x[predict_ends] = gsub(",", "", x[predict_ends])
     }
 
+    x = gsub("# <PREDICT>", "", x)
+
     cat(x, file = path_lrn, sep = "\n")
   }
 
