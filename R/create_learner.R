@@ -200,7 +200,6 @@ create_learner = function(path = ".", classname, type, key = tolower(classname),
     }
 
     x = gsub("# <PREDICT>", "", x)
-
     cat(x, file = path_lrn, sep = "\n")
   }
 
